@@ -26,7 +26,7 @@ def main():
             index=0,  # refers to the Home
             open_all=False,
             items=[
-                sac.MenuItem('Home', icon='alarm'),
+                sac.MenuItem('Home', icon='calendar3'),
 
                 sac.MenuItem(
                     'Products',
