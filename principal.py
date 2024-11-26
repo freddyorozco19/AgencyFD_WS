@@ -4,12 +4,13 @@ from modules.RegisterData import Apple
 from modules.MatchAnalysis import Android, Finance
 from modules.EventingData import Samsung
 from modules.SchedulerData import Account
+from PIL import Image
 
-
+im = Image.open("FootballDivisionWorldwide2.ico")
 st.set_page_config(
     page_title="Antd components in Streamlit",
     layout='centered',
-    page_icon='🤷'
+    page_icon=im
 )
 
 
