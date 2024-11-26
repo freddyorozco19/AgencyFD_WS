@@ -1,9 +1,9 @@
 import streamlit as st
 import streamlit_antd_components as sac
-from modules.apple import Apple
-from modules.google import Android, Finance
-from modules.samsung import Samsung
-from modules.account import Account
+from modules.RegisterData import Apple
+from modules.MatchAnalysis import Android, Finance
+from modules.EventingData import Samsung
+from modules.SchedulerData import Account
 
 
 st.set_page_config(
