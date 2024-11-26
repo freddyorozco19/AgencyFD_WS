@@ -31,7 +31,7 @@ def main():
                     'Products',
                     icon='box-fill',
                     children=[
-                        sac.MenuItem('Apple', icon='apple'),
+                        sac.MenuItem('Match Analysis', icon='apple'),
 
                         sac.MenuItem(
                             'Google',
