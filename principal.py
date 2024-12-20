@@ -13,12 +13,9 @@ st.set_page_config(
     page_icon=im
 )
 
-
 def Home():
     st.header('Antd components in Streamlit')
-
     st.markdown('''A streamlit application that uses antd components.''')
-
 
 def main():
     with st.sidebar:
