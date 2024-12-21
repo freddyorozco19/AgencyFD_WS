@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit_antd_components as sac
+import webbrowser
 from modules.RegisterData import Apple
 from modules.MatchAnalysis import Android, Finance
 from modules.EventingData import Samsung
@@ -8,19 +9,18 @@ from PIL import Image
 
 im = Image.open("IsotipoFF0046.ico")
 st.set_page_config(
-    page_title=" Streamlit",
+    page_title="Antd components in Streamlit",
     layout='centered',
     page_icon=im
 )
 
 def Home():
     st.header('WIN STATS')
-    st.markdown('''A streamli32t applicatponents.''')
-    
+    st.markdown('''A streamlit application that uses antd components.''')
 
-
-def redirect_to_url():
-    st.markdown("[Ir a la otra aplicación](https://opproccesdata.streamlit.app)")
+def open_url():
+    webbrowser.open_new_tab('https://tu-otra-url-aqui.com')
+    st.stop()  # Detiene la ejecución después de abrir la URL
 
 def main():
     with st.sidebar:
@@ -46,8 +46,7 @@ def main():
                     ]
                 ),
                 sac.MenuItem('Register Data', icon='credit-card-2-front-fill'),
-                # Nuevo ítem para la redirección
-                sac.MenuItem('Otra Aplicación', icon='box-arrow-up-right'),
+                sac.MenuItem('Otra App', icon='box-arrow-up-right')
             ],        
         )
 
@@ -58,7 +57,7 @@ def main():
         'Finance': Finance,
         'Samsung': Samsung,
         'Account': Account,
-        'Otra Aplicación': 'https://opproccesdata.streamlit.app'  # Agregamos la nueva acción
+        'Otra App': open_url
     }
 
     if menu_item in menu_actions:
