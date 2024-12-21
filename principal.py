@@ -44,7 +44,7 @@ def main():
                     ]
                 ),
 
-                sac.MenuItem('Account', icon='credit-card-2-front-fill'),
+                sac.MenuItem('Register Data', icon='credit-card-2-front-fill'),
 
             ],        
         )
