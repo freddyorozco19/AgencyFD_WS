@@ -8,7 +8,7 @@ from PIL import Image
 
 im = Image.open("IsotipoFF0046.ico")
 st.set_page_config(
-    page_title="Antd components in Streamlit",
+    page_title=" Streamlit",
     layout='centered',
     page_icon=im
 )
