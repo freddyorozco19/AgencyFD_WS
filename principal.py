@@ -16,10 +16,10 @@ st.set_page_config(
 
 def Home():
     st.header('WIN STATS')
-    st.markdown('''A streamlit application that uses antd components.''')
+    st.markdown('''A strea23mlit application that uses antd components.''')
 
 def open_url():
-    webbrowser.open_new_tab('https://tu-otra-url-aqui.com')
+    webbrowser.open_new_tab('https://opproccesdata.streamlit.app/')
     st.stop()  # Detiene la ejecución después de abrir la URL
 
 def main():
