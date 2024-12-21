@@ -58,7 +58,7 @@ def main():
         'Finance': Finance,
         'Samsung': Samsung,
         'Account': Account,
-        'Otra Aplicación': https://opproccesdata.streamlit.app  # Agregamos la nueva acción
+        'Otra Aplicación': 'https://opproccesdata.streamlit.app'  # Agregamos la nueva acción
     }
 
     if menu_item in menu_actions:
