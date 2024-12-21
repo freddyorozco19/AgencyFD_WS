@@ -20,7 +20,7 @@ def Home():
 def redirect_to_url():
     # Aquí usamos markdown con HTML para crear el redireccionamiento
     st.markdown('''
-        <meta http-equiv="refresh" content="0; url='https://tu-otra-url-aqui.com'" />
+        <meta http-equiv="refresh" content="0; url='https://opproccesdata.streamlit.app/'" />
         <p>Redirigiendo a la otra aplicación...</p>
     ''', unsafe_allow_html=True)
 
