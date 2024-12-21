@@ -19,13 +19,17 @@ def Home():
 
 
     
+
+
 def redirect_to_external_url():
-    url = "https://opproccesdata.streamlit.app/"
-    html_code = f"""
-        <iframe src="{url}" style="width:100%; height:100vh; border:none;">
-        </iframe>
-    """
-    st.components.v1.html(html_code, height=800)
+        url = "https://opproccesdata.streamlit.app/"
+    st.markdown(f'''
+        <h3>Redirigiendo a {url}</h3>
+        <a href="{url}" target="_blank" id="redirect">Click aquí si no eres redirigido automáticamente</a>
+        <script>
+            document.getElementById('redirect').click();
+        </script>
+    ''', unsafe_allow_html=True)
 
 def main():
     # Crear un estado para controlar la redirección
