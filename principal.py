@@ -1,6 +1,5 @@
 import streamlit as st
 import streamlit_antd_components as sac
-import webbrowser
 from modules.RegisterData import Apple
 from modules.MatchAnalysis import Android, Finance
 from modules.EventingData import Samsung
@@ -16,13 +15,28 @@ st.set_page_config(
 
 def Home():
     st.header('WIN STATS')
-    st.markdown('''A strea23mlit application that uses antd components.''')
+    st.markdown('''A streamlit application that uses antd components.''')
 
-def open_url():
-    webbrowser.open_new_tab('https://opproccesdata.streamlit.app/')
-    st.stop()  # Detiene la ejecución después de abrir la URL
+def redirect_to_external_url():
+    # URL a la que quieres redirigir
+    url = "https://opproccesdata.streamlit.app/"
+    
+    # Código JavaScript para la redirección
+    js_code = f"""
+        <script>
+            window.location.href = "{url}";
+        </script>
+    """
+    st.components.v1.html(js_code, height=0)
+    
+    # Mensaje mientras se redirecciona
+    st.info("Redirigiendo...")
 
 def main():
+    # Crear un estado para controlar la redirección
+    if 'redirect_requested' not in st.session_state:
+        st.session_state.redirect_requested = False
+
     with st.sidebar:
         menu_item = sac.menu(
             index=0,
@@ -46,22 +60,25 @@ def main():
                     ]
                 ),
                 sac.MenuItem('Register Data', icon='credit-card-2-front-fill'),
-                sac.MenuItem('Otra App', icon='box-arrow-up-right')
+                sac.MenuItem('Otra App', icon='box-arrow-up-right'),
             ],        
         )
 
-    menu_actions = {
-        'Home': Home,
-        'Apple': Apple,
-        'Android': Android,
-        'Finance': Finance,
-        'Samsung': Samsung,
-        'Account': Account,
-        'Otra App': open_url
-    }
-
-    if menu_item in menu_actions:
-        menu_actions[menu_item]()
+    # Si se selecciona "Otra App", activar la redirección
+    if menu_item == 'Otra App' and not st.session_state.redirect_requested:
+        st.session_state.redirect_requested = True
+        redirect_to_external_url()
+    else:
+        menu_actions = {
+            'Home': Home,
+            'Apple': Apple,
+            'Android': Android,
+            'Finance': Finance,
+            'Samsung': Samsung,
+            'Account': Account
+        }
+        if menu_item in menu_actions:
+            menu_actions[menu_item]()
 
 if __name__ == '__main__':
     main()
