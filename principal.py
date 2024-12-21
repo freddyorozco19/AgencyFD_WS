@@ -17,20 +17,15 @@ def Home():
     st.header('WIN STATS')
     st.markdown('''A streamlit application that uses antd components.''')
 
+
+    
 def redirect_to_external_url():
-    # URL a la que quieres redirigir
     url = "https://opproccesdata.streamlit.app/"
-    
-    # Código JavaScript para la redirección
-    js_code = f"""
-        <script>
-            window.location.href = "{url}";
-        </script>
+    html_code = f"""
+        <iframe src="{url}" style="width:100%; height:100vh; border:none;">
+        </iframe>
     """
-    st.components.v1.html(js_code, height=0)
-    
-    # Mensaje mientras se redirecciona
-    st.info("Redirigiendo...")
+    st.components.v1.html(html_code, height=800)
 
 def main():
     # Crear un estado para controlar la redirección
