@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 def Home():
-    st.header('Antd components in Streamlit')
+    st.header('WIN STATS')
     st.markdown('''A streamlit application that uses antd components.''')
 
 def main():
