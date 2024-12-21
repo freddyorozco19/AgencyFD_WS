@@ -6,7 +6,7 @@ from modules.EventingData import Samsung
 from modules.SchedulerData import Account
 from PIL import Image
 
-im = Image.open("IsotipoFF0046.ico")
+im = Image.open("IsotipoFF046.ico")
 st.set_page_config(
     page_title="Antd components in Streamlit",
     layout='centered',
