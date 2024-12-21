@@ -16,13 +16,9 @@ st.set_page_config(
 def Home():
     st.header('WIN STATS')
     st.markdown('''A streamlit application that uses antd components.''')
-
+    
 def redirect_to_url():
-    # Aquí usamos markdown con HTML para crear el redireccionamiento
-    st.markdown('''
-        <meta http-equiv="refresh" content="0; url='https://opproccesdata.streamlit.app/'" />
-        <p>Redirigiendo a la otra aplicación...</p>
-    ''', unsafe_allow_html=True)
+    st.link_button("Ir a la otra aplicación", "https://opproccesdata.streamlit.app", use_container_width=True)
 
 def main():
     with st.sidebar:
