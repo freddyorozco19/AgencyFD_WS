@@ -14,7 +14,7 @@ st.set_page_config(
 
 def Home():
     st.header('WIN STATS')
-    st.markdown('''A streamlit application that uses antd components.''')
+    st.markdown('''A streamlit applicaDSAtion that uses antd components.''')
 
 def redirect_to_url(url):
     """Redirecciona automáticamente a una URL."""
