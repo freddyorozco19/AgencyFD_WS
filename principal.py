@@ -16,7 +16,7 @@ st.set_page_config(
 
 def Home():
     st.header('WIN STATS')
-    st.markdown('''A streamlit application that uses antd components.''')
+    st.markdown('''A streamlit applicatillon that uses antd components.''')
 
 def open_external_link():
     """Muestra un enlace que abre una URL en una nueva pestaña."""
