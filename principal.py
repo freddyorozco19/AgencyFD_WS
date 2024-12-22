@@ -52,7 +52,7 @@ def main():
                 sac.MenuItem('Register Data', icon='credit-card-2-front-fill', 
                     children=[
                         sac.MenuItem('Football Division', icon='bank'),
-                        sac.MenuItem['Colombian Players', icon='apple'),
+                        sac.MenuItem('Colombian Players', icon='apple'),
                 sac.MenuItem('External Link', icon='link')  # Nuevo ítem
             ],        
         )
