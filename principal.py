@@ -16,16 +16,14 @@ st.set_page_config(
 
 def Home():
     st.header('WIN STATS')
-    st.markdown('''A streamlit applicatillon that uses antd components.''')
+    st.markdown('''A streamlit application that uses antd components.''')
 
-def open_external_link():
-    """Muestra un enlace que abre una URL en una nueva pestaña."""
-    st.markdown('''
-        <a href="https://opproccesdata.streamlit.app/" target="_blank" style="text-decoration:none;">
-            <button style="background-color:#4CAF50;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
-                Abrir OpproccesData
-            </button>
-        </a>
+def redirect_to_new_tab(url):
+    """Abre una URL directamente en una nueva pestaña."""
+    st.markdown(f'''
+        <script>
+            window.open("{url}", "_blank");
+        </script>
     ''', unsafe_allow_html=True)
 
 def main():
@@ -64,7 +62,7 @@ def main():
         'Finance': Finance,
         'Samsung': Samsung,
         'Account': Account,
-        'External Link': open_external_link  # Abre el enlace en una nueva pestaña
+        'External Link': lambda: redirect_to_new_tab("https://opproccesdata.streamlit.app/")  # Redirige automáticamente
     }
 
     # Ejecutar la acción correspondiente
