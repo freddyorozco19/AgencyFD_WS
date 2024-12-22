@@ -56,6 +56,7 @@ def main():
                 sac.MenuItem('External Link', icon='link')  # Nuevo ítem
             ],        
         )
+        ]
 
     # Diccionario de acciones
     menu_actions = {
