@@ -5,6 +5,8 @@ from modules.MatchAnalysis import Android, Finance
 from modules.EventingData import Samsung
 from modules.SchedulerData import Account
 from PIL import Image
+
+# Configuración inicial
 im = Image.open("IsotipoFF0046.ico")
 st.set_page_config(
     page_title="Antd components in Streamlit",
@@ -14,18 +16,22 @@ st.set_page_config(
 
 def Home():
     st.header('WIN STATS')
-    st.markdown('''A streamlit applicaDSAtion that uses antd components.''')
+    st.markdown('''A streamlit application that uses antd components.''')
 
-def redirect_to_url(url):
-    """Redirecciona automáticamente a una URL."""
-    st.markdown(f'''
-        <meta http-equiv="refresh" content="0; url={url}">
+def open_external_link():
+    """Muestra un enlace que abre una URL en una nueva pestaña."""
+    st.markdown('''
+        <a href="https://opproccesdata.streamlit.app/" target="_blank" style="text-decoration:none;">
+            <button style="background-color:#4CAF50;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
+                Abrir OpproccesData
+            </button>
+        </a>
     ''', unsafe_allow_html=True)
 
 def main():
     with st.sidebar:
         menu_item = sac.menu(
-            index=0,  # refers to the Home
+            index=0,  # La opción predeterminada seleccionada es "Home".
             open_all=False,
             items=[
                 sac.MenuItem('Home', icon='calendar3'),
@@ -58,7 +64,7 @@ def main():
         'Finance': Finance,
         'Samsung': Samsung,
         'Account': Account,
-        'External Link': lambda: redirect_to_url("https://opproccesdata.streamlit.app/")  # Redirige a otra página
+        'External Link': open_external_link  # Abre el enlace en una nueva pestaña
     }
 
     # Ejecutar la acción correspondiente
