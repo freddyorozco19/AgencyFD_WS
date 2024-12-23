@@ -57,6 +57,7 @@ def main():
                 sac.MenuItem('Storage', icon='bank')
         ]
         )
+        st.divider()
 
     # Diccionario de acciones
     menu_actions = {
