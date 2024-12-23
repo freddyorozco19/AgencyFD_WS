@@ -11,8 +11,7 @@ im = Image.open("IsotipoFF0046.ico")
 st.set_page_config(
     page_title="Antd components in Streamlit",
     layout='centered',
-    page_icon=im
-)
+    page_icon=im)
 
 def Home():
     st.header('WIN STATS')
