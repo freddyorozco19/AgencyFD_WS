@@ -58,7 +58,6 @@ def main():
         ]
         )
         st.divider()
-
     # Diccionario de acciones
     menu_actions = {
         'Home': Home,
