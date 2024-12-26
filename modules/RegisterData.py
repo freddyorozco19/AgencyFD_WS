@@ -1,8 +1,8 @@
 import streamlit as st
 
 
-def Apple():
-    st.header('Apple page')
+def RegisterData():
+    st.header('RD page')
 
     st.markdown(
         '''
