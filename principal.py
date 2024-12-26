@@ -12,7 +12,6 @@ st.set_page_config(
     page_title="Antd components in Streamlit",
     layout='centered',
     page_icon=im)
-
 def Home():
     st.header('WIN STATS')
     st.markdown('''A streamlit application that uses antd components.''')
@@ -72,6 +71,5 @@ def main():
     # Ejecutar la acción correspondiente
     if menu_item in menu_actions:
         menu_actions[menu_item]()
-
 if __name__ == '__main__':
     main()
