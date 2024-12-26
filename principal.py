@@ -31,9 +31,7 @@ def main():
             open_all=False,
             items=[
                 sac.MenuItem('Home', icon='calendar3'),
-                sac.MenuItem(
-                    'Products',
-                    icon='box-fill',
+                sac.MenuItem('Samsung', icon='box-fill',
                     children=[
                         sac.MenuItem('Match Analysis', icon='apple'),
                         sac.MenuItem('Google', icon='google',
@@ -42,7 +40,7 @@ def main():
                                 sac.MenuItem('Finance', icon='bank'),
                             ],
                         ),
-                        sac.MenuItem('Samsung', icon='phone-flip'),
+                        sac.MenuItem('Products', icon='phone-flip'),
                     ]
                 ),
                 sac.MenuItem('RegisterData', icon='credit-card-2-front-fill', 
