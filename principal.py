@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit_antd_components as sac
-from modules.RegisterData import Apple
+from modules.RegisterData import RegisterData
 from modules.MatchAnalysis import Android, Finance
 from modules.EventingData import Samsung
 from modules.SchedulerData import Account
