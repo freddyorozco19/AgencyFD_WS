@@ -36,9 +36,7 @@ def main():
                     icon='box-fill',
                     children=[
                         sac.MenuItem('Match Analysis', icon='apple'),
-                        sac.MenuItem(
-                            'Google',
-                            icon='google',
+                        sac.MenuItem('Google', icon='google',
                             children=[
                                 sac.MenuItem('Android', icon='android2'),
                                 sac.MenuItem('Finance', icon='bank'),
@@ -47,7 +45,7 @@ def main():
                         sac.MenuItem('Samsung', icon='phone-flip'),
                     ]
                 ),
-                sac.MenuItem('Register Data', icon='credit-card-2-front-fill', 
+                sac.MenuItem('RegisterData', icon='credit-card-2-front-fill', 
                     children=[
                         sac.MenuItem('Football Division', icon='bank'),
                         sac.MenuItem('Colombian Players', icon='apple'),
@@ -60,7 +58,7 @@ def main():
     # Diccionario de acciones
     menu_actions = {
         'Home': Home,
-        'Register Data': RegisterData,
+        'RegisterData': RegisterData,
         'Android': Android,
         'Finance': Finance,
         'Samsung': Samsung,
