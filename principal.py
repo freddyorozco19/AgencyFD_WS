@@ -60,7 +60,7 @@ def main():
     # Diccionario de acciones
     menu_actions = {
         'Home': Home,
-        'Apple': Apple,
+        'Register Data': RegisterData,
         'Android': Android,
         'Finance': Finance,
         'Samsung': Samsung,
