@@ -1,9 +1,7 @@
 import streamlit as st
 
-
 def RegisterData():
     st.header('RD page')
-
     st.markdown(
         '''
         **Apple Inc. is a global technology** company known for its innovative products,
