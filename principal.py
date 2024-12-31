@@ -5,7 +5,6 @@ from modules.MatchAnalysis import Android, Finance
 from modules.EventingData import Samsung
 from modules.SchedulerData import Account
 from PIL import Image
-
 # Configuración inicial
 im = Image.open("IsotipoFF0046.ico")
 st.set_page_config(
@@ -15,7 +14,6 @@ st.set_page_config(
 def Home():
     st.header('WIN STATS')
     st.markdown('''A streamlit application that uses antd components.''')
-
 def redirect_to_new_tab(url):
     """Abre una URL directamente en una nueva pestaña."""
     st.markdown(f'''
