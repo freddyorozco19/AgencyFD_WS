@@ -12,9 +12,11 @@ st.set_page_config(
     page_title="Antd components in Streamlit",
     layout='centered',
     page_icon=im)
+
 def Home():
     st.header('WIN STATS')
     st.markdown('''A streamlit application that uses antd components.''')
+
 def redirect_to_new_tab(url):
     """Abre una URL directamente en una nueva pestaña."""
     st.markdown(f'''
@@ -22,6 +24,7 @@ def redirect_to_new_tab(url):
             window.open("{url}", "_blank");
         </script>
     ''', unsafe_allow_html=True)
+
 def main():
     with st.sidebar:
         menu_item = sac.menu(
