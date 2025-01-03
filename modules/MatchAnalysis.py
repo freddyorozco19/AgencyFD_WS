@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 def Android():
     st.header('Google/Android page')
 
@@ -12,10 +11,8 @@ def Android():
         '''
     )
 
-
 def Finance():
     st.header('Google/Finance page')
-
     st.markdown(
         '''
         **Google Finance provides real-time** stock market quotes, financial news,
@@ -23,4 +20,3 @@ def Finance():
         and company performance through an intuitive, user-friendly interface.
         '''
     )
-    
