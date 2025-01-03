@@ -2,7 +2,6 @@ import streamlit as st
 
 def Android():
     st.header('Google/Android page')
-
     st.markdown(
         '''
         **Google's Android is an open-source mobile operating system** used on various devices,
@@ -11,6 +10,8 @@ def Android():
         '''
     )
 
+
+    
 def Finance():
     st.header('Google/Finance page')
     st.markdown(
@@ -20,3 +21,5 @@ def Finance():
         and company performance through an intuitive, user-friendly interface.
         '''
     )
+
+    st.divider()
