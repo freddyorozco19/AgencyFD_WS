@@ -9,8 +9,6 @@ def Android():
         Google services like Gmail, Maps, and Play Store.
         '''
     )
-
-
     
 def Finance():
     st.header('Google/Finance page')
@@ -21,5 +19,4 @@ def Finance():
         and company performance through an intuitive, user-friendly interface.
         '''
     )
-
     st.divider()
