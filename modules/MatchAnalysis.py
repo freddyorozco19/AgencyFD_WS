@@ -8,8 +8,7 @@ def Android():
         featuring a customizable user interface, extensive app ecosystem, and integration with
         Google services like Gmail, Maps, and Play Store.
         '''
-    )
-    
+    )    
 def Finance():
     st.header('Google/Finance page')
     st.markdown(
