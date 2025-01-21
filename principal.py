@@ -38,7 +38,7 @@ def main():
                         sac.MenuItem('Match Analysis', icon='apple'),
                         sac.MenuItem('Registers', icon='google',
                             children=[
-                                sac.MenuItem('CPU23', icon='colombia'),
+                                sac.MenuItem('CPU2331', icon='colombia'),
                                 sac.MenuItem('Finance', icon='bank'),
                             ],
                         ),
