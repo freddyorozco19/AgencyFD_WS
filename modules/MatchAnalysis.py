@@ -1,6 +1,6 @@
 import streamlit as st
 
-def Android():
+def CPU23():
     st.header('Google/Colombia U23 Players')
     st.markdown(
         '''
