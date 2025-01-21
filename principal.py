@@ -36,9 +36,9 @@ def main():
                 sac.MenuItem('Samsung', icon='box-fill',
                     children=[
                         sac.MenuItem('Match Analysis', icon='apple'),
-                        sac.MenuItem('Google', icon='google',
+                        sac.MenuItem('Registers', icon='google',
                             children=[
-                                sac.MenuItem('CPU23', icon='android2'),
+                                sac.MenuItem('CPU23', icon='colombia'),
                                 sac.MenuItem('Finance', icon='bank'),
                             ],
                         ),
