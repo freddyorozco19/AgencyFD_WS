@@ -1,7 +1,7 @@
 import streamlit as st
 
 def Android():
-    st.header('Google/Android page')
+    st.header('Google/Colombia U23 Players')
     st.markdown(
         '''
         **Google's Android is an open-source mobile operating system** used on various devices,
