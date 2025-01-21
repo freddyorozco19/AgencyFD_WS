@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit_antd_components as sac
 from modules.RegisterData import RegisterData
-from modules.MatchAnalysis import Android, Finance
+from modules.MatchAnalysis import CPU23, Finance
 from modules.EventingData import Samsung
 from modules.SchedulerData import Account
 from PIL import Image
@@ -38,7 +38,7 @@ def main():
                         sac.MenuItem('Match Analysis', icon='apple'),
                         sac.MenuItem('Google', icon='google',
                             children=[
-                                sac.MenuItem('Android', icon='android2'),
+                                sac.MenuItem('CPU23', icon='android2'),
                                 sac.MenuItem('Finance', icon='bank'),
                             ],
                         ),
@@ -60,7 +60,7 @@ def main():
     menu_actions = {
         'Home': Home,
         'RegisterData': RegisterData,
-        'Android': Android,
+        'AndroidCPU23': CPU23,
         'Finance': Finance,
         'Samsung': Samsung,
         'Account': Account,
