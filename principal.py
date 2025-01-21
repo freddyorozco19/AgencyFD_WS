@@ -49,7 +49,7 @@ def main():
                     children=[
                         sac.MenuItem('Football Division', icon='bank'),
                         sac.MenuItem('Colombian Players', icon='apple'),
-                        sac.MenuItem('Colombian U23 Players', icon='link')],        
+                        sac.MenuItem('RegisterData', icon='link')],        
                 ),
                 sac.MenuItem('Storage', icon='bank')
         ]
