@@ -60,7 +60,7 @@ def main():
     menu_actions = {
         'Home': Home,
         'RegisterData': RegisterData,
-        'AndroidCPU23': CPU23,
+        'CPU23': CPU23,
         'Finance': Finance,
         'Samsung': Samsung,
         'Account': Account,
